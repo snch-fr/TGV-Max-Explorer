@@ -8,35 +8,6 @@ L'application tient dans **un seul fichier** : `index.html`. Il n'y a rien à in
 | `index.html` | L'application complète (carte, données de fond et bibliothèque Leaflet incluses). |
 | `_headers`   | En-têtes de sécurité pour Netlify et Cloudflare Pages (ignoré par GitHub Pages, sans effet négatif). |
 
-## Tester sur votre ordinateur
-
-Double-cliquez sur `index.html` (Chrome ou Edge). Une connexion Internet est nécessaire : les données viennent directement de SNCF Open Data.
-
-## Publier gratuitement (au choix)
-
-Les offres gratuites et les menus des hébergeurs évoluent : vérifiez leurs conditions actuelles et adaptez les libellés si besoin.
-
-### Option A — GitHub Pages
-1. Créez un compte sur github.com puis un dépôt **public** (par exemple `max-explorer`).
-2. *Add file → Upload files* : déposez `index.html` (et `_headers`, facultatif), puis validez (*Commit changes*).
-3. *Settings → Pages* : choisissez *Deploy from a branch*, branche `main`, dossier `/ (root)`, puis *Save*.
-4. Au bout d'une à deux minutes, la page est en ligne sur `https://<votre-pseudo>.github.io/max-explorer/`.
-
-### Option B — Netlify
-1. Créez un compte sur netlify.com.
-2. *Add new site → Deploy manually* (ou « Netlify Drop ») et glissez-y **le dossier** contenant `index.html` et `_headers`.
-3. Netlify vous donne une adresse en `.netlify.app`, modifiable dans les paramètres du site.
-
-### Option C — Cloudflare Pages
-1. Créez un compte sur cloudflare.com.
-2. *Workers & Pages → Create → Pages → Upload assets*, puis glissez le dossier.
-3. L'adresse obtenue se termine par `.pages.dev`.
-
-### Nom de domaine personnalisé (facultatif)
-Achetez un nom de domaine chez le bureau d'enregistrement de votre choix (quelques euros par an en général), puis associez-le au site dans les paramètres de l'hébergeur choisi.
-
-## Ce qu'il faut savoir avant d'annoncer la page
-
 - **Données** : « SNCF Open Data — Disponibilité à 30 jours de places MAX JEUNE et MAX SENIOR », licence ODbL (mention déjà affichée dans la page, rubrique « À propos et licences »). Relisez les conditions : <https://data.sncf.com/pages/licence>.
 - **Instantané** : les données sont mises à jour une fois par jour, en début de matinée. La page invite à confirmer sur SNCF Connect avant de réserver.
 - **Indépendance** : le service n'est pas affilié à la SNCF (mention incluse). N'utilisez ni logo ni charte graphique de la SNCF.
