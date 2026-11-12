@@ -3,14 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>MAX Explorer – trajets TGV à 0 €</title>
+<title>TGV Max Explorer – tous les trajets TGV Max à 0 € sur une carte</title>
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src https://ressources.data.sncf.com; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <meta name="description" content="Carte des trajets TGV INOUI et Intercités à 0 € pour les abonnés MAX Jeune et MAX Senior : choisissez une gare de départ, une destination (ou « partout ») et des dates flexibles. Service indépendant, données SNCF Open Data.">
 <meta name="theme-color" content="#0a7d5c">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:title" content="MAX Explorer – trajets TGV à 0 €">
+<link rel="canonical" href="https://tgv-max-explorer.com/">
+<meta name="robots" content="index,follow">
+<meta property="og:site_name" content="TGV Max Explorer">
+<meta property="og:url" content="https://tgv-max-explorer.com/">
+<meta property="og:title" content="TGV Max Explorer – tous les trajets TGV Max à 0 € sur une carte">
+<meta name="twitter:card" content="summary">
 <meta property="og:description" content="Trouvez les trains MAX Jeune / MAX Senior à 0 € au départ de votre gare, par destination et par date. Service indépendant.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a7d5c'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='white'%3E0%E2%82%AC%3C/text%3E%3C/svg%3E">
 <style>/* required styles */
@@ -854,6 +859,7 @@ footer{max-height:42vh;overflow:auto}
 .pop button{border:1px solid var(--line);background:var(--chip);border-radius:7px;padding:4px 9px;font-size:12.5px;font-weight:600}
 .pop button[data-a=from]{background:var(--origin);border-color:var(--origin);color:#fff}
 .pop button[data-a=to]{background:var(--dest);border-color:var(--dest);color:#1d1300}
+.seo{margin:0 0 8px}
 .legend{position:absolute;left:12px;bottom:22px;z-index:500;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:12px;box-shadow:var(--shadow);display:grid;gap:4px;color:var(--muted)}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:7px;vertical-align:-1px}
 .mapwrap{position:relative;min-height:0}
@@ -925,6 +931,7 @@ footer{max-height:42vh;overflow:auto}
 
     <section id="results" aria-live="polite"></section>
     <footer>
+      <p class="seo"><b>TGV Max Explorer</b> affiche sur une carte de France tous les trajets TGV INOUI et Intercités à 0 € disponibles avec un abonnement TGV Max (MAX Jeune et MAX Senior). Choisissez une gare de départ, laissez la destination libre pour voir où partir gratuitement, filtrez par dates flexibles et ajoutez des correspondances (1 ou 2 changements).</p>
       Places à 0 € réservées aux abonnés MAX Jeune (16–27 ans) et MAX Senior (60 ans et +). Instantané du matin : confirmez sur <a href="https://www.sncf-connect.com/" target="_blank" rel="noopener noreferrer">SNCF Connect</a> avant de réserver.
       <details class="about">
         <summary>À propos et licences</summary>
